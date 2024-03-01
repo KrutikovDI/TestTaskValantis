@@ -1,0 +1,40 @@
+body {
+  background-color: white;
+}
+
+.btn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.pagination {
+  display: flex;
+  width: 160px;
+}
+
+#forward {
+  margin-left: auto;
+}
+
+#back {
+  margin-right: auto;
+}
+
+.page, button {
+  cursor: pointer;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.product {
+  list-style-type: none;
+}
+
+.filter {
+  border: 2px solid orange;
+  padding: 5px;
+  margin-top: 5px;
+  width: 200px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+</head>
+<body>
+  <div class="main">
+    <div class="btn"> Здесь можно отфильтровать товары по категории:
+      <form id="form-product-name" class="filter">
+        <input type="text" id="name" placeholder="название товара">
+        <button type="submit">Отфильтровать</button>
+      </form>
+            <form id="form-product-price" class="filter">
+        <input type="number" id="price" placeholder="цена товара">
+        <button type="submit">Отфильтровать</button>
+      </form>
+            <form id="form-product-brand" class="filter">
+        <input type="text" id="brand" placeholder="бренд товара">
+        <button type="submit">Отфильтровать</button>
+      </form>
+    </div>
+  </div>
+  <label>
+    <progress value="0.0" id="progress" ></progress>
+  </label>
+  <div class="pagination" id="go-peges">
+    <div class="page" id="back" style="display: none;">Назад</div>
+    <div class="page" id="forward">Вперед</div>
+  </div>
+  <ul class="products" id="products"></ul>
+  <script src="main.js"></script>
+</body>
+</html>
